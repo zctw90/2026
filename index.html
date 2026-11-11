@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="我的個人網站與作品介紹">
+  <title>我的第一個網站</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      line-height: 1.7;
+      color: #263746;
+      background: #faf9f6;
+    }
+    header {
+      padding: 18px 8%;
+      background: white;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #eee;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #263746;
+      text-decoration: none;
+      margin-left: 14px;
+    }
+    section { padding: 75px 8%; }
+    .hero {
+      background: #243f5a;
+      color: white;
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    h1 { font-size: clamp(32px, 5vw, 56px); }
+    h2 { font-size: 28px; }
+    .button {
+      display: inline-block;
+      background: white;
+      color: #243f5a;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+    footer {
+      padding: 30px 8%;
+      text-align: center;
+      color: #777;
+    }
+    @media (max-width: 600px) {
+      .projects { grid-template-columns: 1fr; }
+      section { padding: 55px 6%; }
+      nav a { margin-left: 8px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <strong>MY WEBSITE</strong>
+      <div>
+        <a href="#about">關於</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">聯絡</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>WELCOME</p>
+      <h1>你好，歡迎來到我的網站。</h1>
+      <p>在這裡分享我的想法、作品與專案。</p>
+      <a class="button" href="#projects">探索作品</a>
+    </section>
+
+    <section id="about">
+      <h2>關於我</h2>
+      <p>在這裡介紹你的背景、專長與理念。</p>
+    </section>
+
+    <section id="projects">
+      <h2>精選作品</h2>
+      <div class="projects">
+        <article class="card">
+          <h3>專案 A</h3>
+          <p>介紹這個專案的目標與成果。</p>
+        </article>
+        <article class="card">
+          <h3>專案 B</h3>
+          <p>分享你的另一項作品。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡方式</h2>
+      <p>可在這裡放公開的 Email 或社群連結。</p>
+    </section>
+  </main>
+
+  <footer>© 2026 MY WEBSITE</footer>
+</body>
+</html>
